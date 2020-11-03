@@ -130,7 +130,7 @@
                     </div><!-- end of nav-collapse -->
 
                     <div class="search-contact">
-                        <div class="header-search-area">
+                        <!-- <div class="header-search-area">
                             <div class="header-search-form">
                                 <form class="form">
                                     <div>
@@ -142,10 +142,14 @@
                             <div>
                                 <button class="btn open-btn"><i class="ti-search"></i></button>
                             </div>
-                        </div>
+                        </div> -->
+
+
+
+
                         <div class="contact">
                             <div class="call">
-                                <i class="fi flaticon-call"></i>
+                                <i class="call-icon fi flaticon-call"></i>
                                 <p>Call us anytime</p>
                                 <h5>+65487441584</h5>
                             </div>
@@ -156,46 +160,6 @@
             </nav>
         </header>
         <!-- end of header -->
-
-
-
-<style>
-
-.page
-{
-    width: 1000px;
-    /*margin: 0 auto;*/
-    /*height: 3000px;*/
-}
-
-.gears
-{
-    position: fixed;
-    z-index: 999;
-}
-
-#cog1
-{
-    position: fixed;
-    /*left: 10px;*/
-    /*top: 00px;*/
-    right: 10px;
-    top: 500px;
-    max-width: 60px;
-}
-
-#cog2
-{
-    position: fixed;
-    /*left: -40px;*/
-    top: 200px;
-    right: -40px;
-    /*top: 500px;*/
-    max-width: 60px;
-}
-
-
-</style>
 
 
 <!-- <div class="page"> -->
@@ -209,8 +173,6 @@
         </div>
 
     <!-- </div> -->
-
-
 
 
 
@@ -260,10 +222,24 @@
                 </div>
                 <!-- end swiper-wrapper -->
 
+
+                <div class="left-title">manufacturers</div>
+        
+                <div class="container">
+                    <!-- Social Box -->
+                    <div class="social-box">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-skype"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                    </div>
+                </div>
+                <!--Scroll Dwwn Btn-->
+                <div class="mouse-btn-down scroll-to-target" data-target=".welcome-section"></div>
                 <!-- swipper controls -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
             </div>
         </section>
         <!-- end of hero slider -->
@@ -746,113 +722,6 @@
 
 
 
-<style>
-    
-
-.project-section-current{
-    position:relative;
-    padding:90px 0px 0px;
-    background-color: #fff;
-}
-
-.project-section-current .owl-carousel .owl-stage-outer{
-    padding:15px 0px 0px;
-}
-
-.project-section-current .owl-dots{
-    display:none;
-}
-
-.project-section-current .owl-nav{
-    position: absolute;
-    right: 0px;
-    top: -80px;
-    z-index: 99;
-}
-
-.project-section-current .owl-prev, 
-.project-section-current .owl-next{
-    position: relative;
-    height: 38px;
-    width: 38px;
-    line-height: 36px;
-    text-align: center;
-    font-size: 16px;
-    color: #222222; 
-    margin-left:10px;
-    background: #ffaa00;
-    display:inline-block;
-    -webkit-transition:all 300ms ease;
-    -moz-transition:all 300ms ease;
-    -ms-transition:all 300ms ease;
-    -o-transition:all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.project-section-current .owl-prev:hover, 
-.project-section-current .owl-next:hover{
-    color: #ffffff;
-    border-color:#222222;
-    background-color:#222222;
-}
-
-
-
-
-
-
-
-
-
-#f1_container {
-    position: relative;
-    margin: 10px auto;
-    width: 250px;
-    height: 190px;
-    z-index: 1;
-    padding-top: 40px;
-}
-#f1_container {
-    perspective: 1000px;
-    height: 300px;
-}
-#f1_card {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.5s linear;
-}
-#f1_container:hover #f1_card {
-    transform: rotateY(180deg);
-    /*box-shadow: -5px 5px 5px #aaa;*/
-}
-.face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-.face.back {
-    display: block;
-    transform: rotateY(180deg);
-    box-sizing: border-box;
-    padding: 10px;
-    /*color: white;*/
-    text-align: center;
-    background-color: #fd5f17;
-    height: 250px;
-}
-.back p {
-    color: #ffffff;
-}
-#f1_container img {
-    /*width: 250px;*/
-    height: 250px;
-    padding: 0px 50px;
-}
-
-</style>
-
     <!-- Project Section -->
     <section class="project-section-current">
         <div class="container">
@@ -921,34 +790,6 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            center: true,
-            loop:true,
-            margin:10,
-            autoplay:true,
-            autoplayTimeout:2000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:3,
-                    nav:true
-                },
-                1000:{
-                    items:5,
-                    nav:true
-                }
-            }
-        })
-    })
-</script>
 
 
 
@@ -1421,9 +1262,10 @@
                                     <ul>
                                         <li><a href="#"><i class="ti-facebook"></i></a></li>
                                         <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="#"><i class="ti-google"></i></a></li>
+                                        <!-- <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -1439,12 +1281,12 @@
                                     <li><a href="#">Contact us</a></li>
                                     <li><a href="#">Meet team</a></li>
                                 </ul>
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="#">Provacu Policy</a></li>
                                     <li><a href="#">Testimonials</a></li>
                                     <li><a href="#">News</a></li>
                                     <li><a href="#">FAQ</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         <div class="col col-lg-3 col-md-3 col-sm-6">
@@ -1484,14 +1326,15 @@
                     <div class="row">
                         <div class="separator"></div>
                         <div class="col col-xs-12">
-                            <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script><a href="#"> Shearfox International</a><br>Designed and Developed  by <a href="https://www.destovtech.com" target="_blank">Destov Tech</a></p>
+
                             <div class="extra-link">
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="#">Privace & Policy</a></li>
                                     <li><a href="#">Terms</a></li>
                                     <li><a href="#">About us</a></li>
                                     <li><a href="#">FAQ</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -1539,6 +1382,51 @@ $(document).ready(function()
 });
 
 </script>
+
+<script>
+    
+    // Scroll to a Specific Div
+    if($('.scroll-to-target').length){
+        $(".scroll-to-target").on('click', function() {
+            var target = $(this).attr('data-target');
+           // animate
+           $('html, body').animate({
+               scrollTop: $(target).offset().top
+             }, 1500);
+    
+        });
+    }
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:true
+                },
+                1000:{
+                    items:5,
+                    nav:true
+                }
+            }
+        })
+    })
+</script>
+
 </body>
 
 <!-- dustech/  13 Nov 2019 12:54:40 GMT -->

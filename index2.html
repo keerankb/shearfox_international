@@ -2664,6 +2664,87 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script>
+        
+    //Update Header Style and Scroll to Top
+    function headerStyle() {
+        if($('.main-header').length){
+            var windowpos = $(window).scrollTop();
+            var siteHeader = $('.main-header');
+            var scrollLink = $('.scroll-to-top');
+            if (windowpos >= 200) {
+                siteHeader.addClass('fixed-header');
+                scrollLink.fadeIn(300);
+            } else {
+                siteHeader.removeClass('fixed-header');
+                scrollLink.fadeOut(300);
+            }
+        }
+    }
+    
+    headerStyle();
+    
+    
+    //Submenu Dropdown Toggle
+    if($('.main-header li.dropdown ul').length){
+        $('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
+        
+        //Dropdown Button
+        $('.main-header li.dropdown .dropdown-btn').on('click', function() {
+            $(this).prev('ul').slideToggle(500);
+        });
+        
+        //Dropdown Menu / Fullscreen Nav
+        $('.fullscreen-menu .navigation li.dropdown > a').on('click', function() {
+            $(this).next('ul').slideToggle(500);
+        });
+        
+        //Disable dropdown parent link
+        $('.navigation li.dropdown > a').on('click', function(e) {
+            e.preventDefault();
+        });
+        
+        //Disable dropdown parent link
+        $('.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function(e) {
+            e.preventDefault();
+        });
+    }
+    
+    
+    //Hidden Sidebar
+    if ($('.hidden-bar,.fullscreen-menu').length) {
+        var hiddenBar = $('.hidden-bar');
+        var hiddenBarOpener = $('.nav-toggler');
+        var hiddenBarCloser = $('.hidden-bar-closer,.close-menu');
+        $('.hidden-bar-wrapper').mCustomScrollbar();
+        
+        //Show Sidebar
+        hiddenBarOpener.on('click', function () {
+            $('body').addClass('visible-menu-bar');
+            hiddenBar.addClass('visible-sidebar');
+        });
+        
+        //Hide Sidebar
+        hiddenBarCloser.on('click', function () {
+            $('body').removeClass('visible-menu-bar');
+            hiddenBar.removeClass('visible-sidebar');
+        });
+    }
+
+
+    
+    $(window).on('scroll', function() {
+        headerStyle();
+    });
+    
+/* ==========================================================================
+   When document is loading, do
+   ========================================================================== */
+    
+    $(window).on('load', function() {
+        handlePreloader();
+    }); 
+    </script>
 </body>
 
 <!-- dustech/  13 Nov 2019 12:54:40 GMT -->
