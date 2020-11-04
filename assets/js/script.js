@@ -694,4 +694,80 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// // on going porjects
+//  $(document).ready(function(){
+//         $(".owl-carousel").owlCarousel({
+//             center: true,
+//             loop:true,
+//             margin:10,
+//             autoplay:true,
+//             autoplayTimeout:2000,
+//             autoplayHoverPause:true,
+//             responsive:{
+//                 0:{
+//                     items:1,
+//                     nav:true
+//                 },
+//                 600:{
+//                     items:3,
+//                     nav:true
+//                 },
+//                 1000:{
+//                     items:5,
+//                     nav:true
+//                 }
+//             }
+//         })
+//     });
+
+
+
+ // Scroll to a Specific Div
+    if($('.scroll-to-target').length){
+        $(".scroll-to-target").on('click', function() {
+            var target = $(this).attr('data-target');
+           // animate
+           $('html, body').animate({
+               scrollTop: $(target).offset().top
+             }, 1500);
+    
+        });
+    };
+
+
+
+        // Control the spinning gears
+$(document).ready(function() 
+{    
+    var height = $(document).height();
+            
+    $(document).scroll(function() 
+    {
+        // Are we moving up or down?
+        curScrollPos = $(document).scrollTop();
+        degrees = curScrollPos/height * 360; //multiply by 360, hopefully we get full 360 rotation      
+        neg = 360 - degrees;
+        
+        $('#cog1').css('transform', 'rotate(' + degrees + 'deg)');
+        // $('#cog2').css('transform', 'rotate(' + neg + 'deg)');
+        // $('#cog3').css('transform', 'rotate(' + degrees + 'deg)');
+        
+    });
+});
+
+
+
+
+
 })(window.jQuery);

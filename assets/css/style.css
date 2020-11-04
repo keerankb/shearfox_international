@@ -335,7 +335,7 @@ img {
 .section-title h2, .section-title-s2 h2, .section-title-s3 h2, .section-title-s4 h2, .section-title-s5 h2 {
   font-size: 38px;
   font-size: 2.375rem;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0.1em 0 0;
 }
 
@@ -7624,18 +7624,18 @@ img {
   position: relative;
   display: block;
   font-size: 16px;
-  font-weight: 700;
-  color: #fc9a36;
+  font-weight: 500;
+  color: #fd5f17;
   margin-bottom: 10px;
 }
 
 .service-style-four .title-box h1{
   position: relative;
   display: block;
-  font-size: 40px;
+  /*font-size: 40px;*/
   line-height: 48px;
-  color: #0c0d24;
-  font-weight: 700;
+  color: #131e4a;
+  font-weight: 600;
   margin-bottom: 23px;
 }
 
@@ -8029,7 +8029,13 @@ img {
     margin-top:70px;
     box-shadow:0px 0px 15px rgba(0,0,0,0.15);
 }
-
+.welcome-section .content-column .inner-column .sec-title h2 {
+    color: #131e4a;
+}
+.welcome-section .content-column .inner-column .title-inner span {
+    color: #fd5f17;
+    font-weight: 500;
+}
 
 @media only screen and (max-width: 767px) {
 .welcome-section .content-column .inner-column .counter-box {
@@ -8198,6 +8204,14 @@ img {
     position:relative;
     padding:90px 0px 0px;
     background-color: #fff;
+}
+
+.project-section-current .sec-title .title-inner span {
+  color: #fd5f17;
+  font-weight: 500;
+}
+.project-section-current .sec-title h2 {
+  
 }
 
 .project-section-current .owl-carousel .owl-stage-outer{
