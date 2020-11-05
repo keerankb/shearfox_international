@@ -325,7 +325,7 @@ img {
 .section-title > span, .section-title-s2 > span, .section-title-s3 > span, .section-title-s4 > span, .section-title-s5 > span {
   font-size: 15px;
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 550;
   color: #fd5f17;
   text-transform: capitalize;
   display: block;
@@ -1772,6 +1772,7 @@ img {
   }
   .header-style-1 .navigation, .header-style-2 .navigation, .header-style-3 .navigation {
     background: transparent;
+    /*background-color: #131e4a;*/
   }
   .header-style-1 .navbar-nav, .header-style-2 .navbar-nav, .header-style-3 .navbar-nav {
     margin-left: 60px;
@@ -2246,7 +2247,7 @@ img {
   border-radius: 55px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 880px) {
   .hero-slider .swiper-button-prev,
   .hero-slider .swiper-button-next {
     display: none;
@@ -2411,8 +2412,8 @@ img {
 .hero-style-1 .slide-text,
 .hero-style-1 .slide-btns {
   max-width: 690px;
-  text-align: center;
-  margin: 0 auto;
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
 }
 
 .hero-style-1 .slide-title h2 {
@@ -7624,7 +7625,7 @@ img {
   position: relative;
   display: block;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 550;
   color: #fd5f17;
   margin-bottom: 10px;
 }
@@ -7809,7 +7810,7 @@ img {
   position: relative;
   display: block;
   background: #fff;
-  padding: 94px 0px 130px 0px;
+  padding: 100px 0px 50px 0px;
 }
 
 .project-section:before{
@@ -7825,7 +7826,14 @@ img {
 }
 
 .project-section .sec-title{
-  margin-bottom: 148px;
+  margin-bottom: 50px;
+}
+.project-section .sec-title span {
+  color: #fd5f17;
+  font-weight: 550;
+  display: block;
+  /*margin-top: -0.2em;*/
+  /*font-size: 0.9375rem;*/
 }
 
 .project-block-one .inner-box .image-box{
@@ -7871,6 +7879,9 @@ img {
   display: block;
   background: #fff;
   padding: 30px 40px 25px 40px;
+}
+.project-block-one .inner-box .lower-content h3 {
+  cursor: pointer;
 }
 
 .project-block-one .inner-box .lower-content:after{
@@ -8034,7 +8045,7 @@ img {
 }
 .welcome-section .content-column .inner-column .title-inner span {
     color: #fd5f17;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8208,10 +8219,10 @@ img {
 
 .project-section-current .sec-title .title-inner span {
   color: #fd5f17;
-  font-weight: 500;
+  font-weight: 550;
 }
 .project-section-current .sec-title h2 {
-  
+
 }
 
 .project-section-current .owl-carousel .owl-stage-outer{

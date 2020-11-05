@@ -42,15 +42,79 @@
 
 
 
+<style>
+    
+    .swiper-container .overlay {
+          position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+    }
+    .swiper-container video {
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100px;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+    }
+@media screen and (max-width: 991px) {
+    .swiper-container video {
+        display: none;
+    }
+}
 
+/*
+    .swiper-wrapper .container .slide-title {
+        position: absolute;
+        z-index: 999;
+        top: -1000px;
+    }*/
+
+    .swiper-wrapper {
+            position:absolute;
+    left:30px;
+    bottom:40px;
+    z-index:10;
+
+    }
+    @media screen and (min-width: 767px) and (max-width: 991px) {
+        .swiper-container {
+        /*background-image: url(assets/images/slider/slide-1.jpg);*/
+        /*max-width: 500px;*/
+        /*height: 100px;*/
+        background-image: url(assets/images/slider/sample-slide.jpg);
+        }
+    }
+    @media screen and (max-width: 766px) {
+        .swiper-container {
+            background-image: url(assets/images/slider/sample-slide-2.jpg);
+        }
+    }
+</style>
 
 
         <!-- start of hero -->
         <section class="hero-slider hero-style-1">
             <div class="swiper-container">
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="assets/images/slider/video1.mp4" type="video/mp4">
+                </video>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-1.jpg">
+                        <div class="slide-inner slide-bg-image">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
                                     <h2>The Best Move you will Ever Make</h2>
@@ -67,8 +131,8 @@
                         </div> <!-- end slide-inner --> 
                     </div> <!-- end swiper-slide -->
 
-                    <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-2.jpg">
+                    <!-- <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
                                     <h2>The Best Move you will Ever Make</h2>
@@ -82,8 +146,8 @@
                                     <a href="about.php" class="theme-btn-s2">More about us</a> 
                                 </div>
                             </div>
-                        </div> <!-- end slide-inner --> 
-                    </div> <!-- end swiper-slide -->
+                        </div> 
+                    </div>  -->
                 </div>
                 <!-- end swiper-wrapper -->
 
@@ -103,8 +167,8 @@
                 <div class="mouse-btn-down scroll-to-target" data-target=".welcome-section"></div>
                 <!-- swipper controls -->
                     <!-- <div class="swiper-pagination"></div> -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-button-next"></div> -->
+                    <!-- <div class="swiper-button-prev"></div> -->
             </div>
         </section>
         <!-- end of hero slider -->
@@ -415,7 +479,7 @@
                             <div class="left-layer"></div>
                             <div class="right-layer"></div>
                             <div class="icon-box"><i class="fa fa-font-awesome"></i></div>
-                            <h3><a href="#">Digital Online Manufacturing</a></h3>
+                            <h3><a href="">Digital Online Manufacturing</a></h3>
                             <div class="text">Upload CAD files, select processing, and we will handle everything else in a cost-effective and efficient way. Every step of manufacturing process is transparent and synchronized in real-time, you can track your order at any time you want.</div><br><br>
                             <!-- <div class="btn-box"><a href="#">Explore</a></div> -->
                         </div>
@@ -427,7 +491,7 @@
                             <div class="left-layer"></div>
                             <div class="right-layer"></div>
                             <div class="icon-box"><i class="fa fa-suitcase"></i></div>
-                            <h3><a href="#">Strong Engineering Support</a></h3>
+                            <h3><a href="">Strong Engineering Support</a></h3>
                             <div class="text">The engineering team of 150 technicians is always ready to support you on everything. From material or design advice at early-stage prototyping to technical reminders for manufacturing, all the way to end-use production.</div><br><br>
                             <!-- <div class="btn-box"><a href="#">Explore</a></div> -->
                         </div>
@@ -439,7 +503,7 @@
                             <div class="left-layer"></div>
                             <div class="right-layer"></div>
                             <div class="icon-box"><i class="fa fa-university"></i></div>
-                            <h3><a href="#">Guaranteed High Quality</a></h3>
+                            <h3><a href="">Guaranteed High Quality</a></h3>
                             <div class="text">Quality comes first at RapidDirect. We provide full dimensional report and SGS, RoHS material certifications on our customers' request. Moreover, First Part Verification Program is available for CNC machining and injection molding services. And eventually, you can always enjoy our Return & refund policy.</div>
                             <!-- <div class="btn-box"><a href="#">Explore</a></div> -->
                         </div>
@@ -670,7 +734,8 @@
 <!-- project-section -->
     <section class="project-section">
         <div class="container">
-            <div class="sec-title centred">
+            <div class="sec-title text-center">
+                <span>Our Path</span>
                 <h1>From Prototype to Production</h1>
                 <p>Our experienced staff, combined with our global network, allow us to provide the<br />support you need</p>
             </div>
@@ -684,7 +749,7 @@
                             </div>
                             <div class="lower-content">
                                 <div class="count-number">01</div>
-                                <h3><a href="case-single.html">ID/MD Design</a></h3>
+                                <h3>ID/MD Design</h3>
                                 <div class="text">Our team of experts provides support throughout the ID/MD design process, offering outside-the-box solutions.</div>
                             </div>
                         </div>
@@ -699,7 +764,7 @@
                             </div>
                             <div class="lower-content">
                                 <div class="count-number">02</div>
-                                <h3><a href="case-single.html">Prototyping</a></h3>
+                                <h3>Prototyping</h3>
                                 <div class="text">Our services can fulfil a broad range of prototyping applications as well as low-volume manufacturing. All with consistent cost-effective price and short lead-time.</div>
                             </div>
                         </div>
@@ -714,7 +779,7 @@
                             </div>
                             <div class="lower-content">
                                 <div class="count-number">03</div>
-                                <h3><a href="case-single.html">Structural Optimization</a></h3>
+                                <h3>Structural Optimization</h3>
                                 <div class="text">Our team of experts offers guidance and know-how for achieving structural optimization for any given projects.</div>
                             </div>
                         </div>
@@ -729,7 +794,7 @@
                             </div>
                             <div class="lower-content">
                                 <div class="count-number">04</div>
-                                <h3><a href="case-single.html">Mass Production</a></h3>
+                                <h3>Mass Production</h3>
                                 <div class="text">Beyond prototyping and low-volume production, we also offer mass production services including laser cutting, extrusion, water jet, die casting, etc.</div>
                             </div>
                         </div>

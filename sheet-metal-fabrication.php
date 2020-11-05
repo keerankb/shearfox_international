@@ -222,23 +222,23 @@
                         <div class="service-sidebar">
                             <div class="widget service-list-widget">
                                 <ul>
-                                    <li><a href="services.html">All Service</a></li>
-                                    <li><a href="cnc-machining.html">CNC Machining</a></li>
-                                    <li class="current"><a href="sheet-metal-fabrication.html">Sheet Metal Fabrication</a></li>
-                                    <li><a href="3d-printing.html">3D Printing</a></li>
-                                    <li><a href="injection-molding.html">Injection Molding</a></li>
+                                    <li><a href="services.php">All Service</a></li>
+                                    <li><a href="cnc-machining.php">CNC Machining</a></li>
+                                    <li class="current"><a href="sheet-metal-fabrication.php">Sheet Metal Fabrication</a></li>
+                                    <li><a href="3d-printing.php">3D Printing</a></li>
+                                    <li><a href="injection-molding.php">Injection Molding</a></li>
                                     <!-- <li><a href="electrical-power.html">Electrical power</a></li> -->
                                 </ul>
                             </div>
                             <div class="widget download-widget">
                                 <ul>
-                                    <li><a href="#"><i class="ti-zip"></i>Company presentation</a></li>
+                                    <li><a href="about.php"><i class="ti-zip"></i>Company presentation</a></li>
                                 </ul>
                             </div>
                             <div class="widget contact-widget">
                                 <div>
                                     <h5>We are Industrial experts Team</h5>
-                                    <a href="#">Contact with us</a>
+                                    <a href="contact.php">Contact with us</a>
                                 </div>
                             </div>
                         </div>                    
